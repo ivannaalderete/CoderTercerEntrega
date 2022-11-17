@@ -1,0 +1,120 @@
+html {
+    body {
+        background-color: $color-fuentes;
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .box {
+                display: inline-block;
+                border-radius: 10px;
+                width: 600px;
+                height: 200px;
+                background: linear-gradient(to left, #4cb8c4, #3cd3ad);
+            }
+
+            .container {
+                display: grid;
+                grid-template-areas:
+                    "header header header"
+                    "nav nav nav"
+                    "coachingA  coachingB  coachingC"
+                    "coachingA  coachingB  coachingC"
+                    "footer footer footer";
+
+                section{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items:center;
+                    box-shadow: 10px 2px 5px 0px rgba(223, 181, 243, 0.75);
+                    box-sizing:border-box;
+                    margin: 1 rem;
+                    padding: 0.5 rem;
+                    height: 50 rem;
+                    width: 300px;
+
+                    img {
+                        width: 40rem;
+                        border-radius: 4px;
+
+                        width: 300px;
+                        justify-content: center;
+                        align-items: baseline;
+                        
+
+                    /*RESPONSIVE*/
+                    text-align: center;
+
+                    /*flex*/
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    box-shadow: 10px 2px 5px 0px rgba(223, 181, 243, 0.75);
+                }
+                    /*GRID*/
+
+                    .coachingA {
+                        grid-area: coachingA;
+                    }
+
+                    .coachingB {
+                        grid-area: coachingB;
+
+                    }
+
+                    .coachingC {
+                        grid-area: coachingC;
+                    }
+
+                    button{
+                        height: 45px; 
+                        padding-left: 5px;
+                        padding-right: 5px;   
+                        margin-bottom: 20px; 
+                        margin-top: 10px;   
+                        text-transform: uppercase;
+                        background-color: #ab4493; 
+                        border-color: #ab4493; 
+                        border-style: solid; 
+                        border-radius: 10px;  
+                        width: 420px;   
+                        cursor: pointer;
+
+                        .formP{
+                            color: rgb(223, 203, 203); 
+                          }
+                        }
+                }
+
+                h1 {
+                    text-align: center;
+                    color: $color-fuentes;
+                    animation-name: texto;
+                    animation-duration: 3s;
+                    animation-iteration-count: infinite;
+                }
+
+                h2 {
+                    text-align: center;
+                    color: $color-fuentes;
+                    animation-name: texto;
+                    
+                }
+            }
+
+        }
+
+    }
+
+}
+
+.parrafo {
+    text-align: center;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

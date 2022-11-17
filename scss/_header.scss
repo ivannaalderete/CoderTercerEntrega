@@ -1,0 +1,212 @@
+/*HEADER*/
+@mixin anclas {
+    text-decoration: none;
+    color: $color-fuentes-secundario;
+    padding: 1rem;
+    display: block;
+    transition: 0.5s;
+}
+
+/*header{
+    .encabezado{
+        background-image: url("../img/coach.jpeg");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 40vh;
+        width: 100%;
+        position:relative;
+        grid-area: header;
+
+    nav{
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+    .brand-title {
+        font-family: var(--ff-sec);
+        font-size: 4rem;
+        color: white;
+    }
+    
+    .brand-title a:visited {
+        color: rgb(107, 35, 175);
+    }
+    
+        div{
+            button{
+                height: 45px; 
+                padding-left: 5px;
+                padding-right: 5px;   
+                margin-bottom: 20px; 
+                margin-top: 10px;   
+                text-transform: uppercase;
+                background-color: #ab4493; 
+                border-color: #ab4493; 
+                border-style: solid; 
+                border-radius: 10px;  
+                width: 420px;   
+                cursor: pointer;
+
+                .toggle-button {
+                    position: absolute;
+                    top: 1.03rem;
+                    right: 1rem;
+                    display: none;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 30px;
+                    height: 21px;
+                
+                &:bar {
+                    height: 3px;
+                    width: 100%;
+                    background-color: white;
+                    border-radius: 10px;
+                }
+                &:formP{
+                    color: rgb(223, 203, 203); 
+            }
+        }
+        ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+            li{
+                display: inline-block;
+                list-style: none;
+                text-transform: uppercase;
+                font-weight: 900;
+                margin-left: 2rem;
+                letter-spacing: 1px;
+
+                a{
+                    @include anclas;
+                &:hover {
+                    color: $color-fondo;
+                    transform: scale(1.5) translateY(-5px);
+                }
+            }
+        }
+        }
+    }
+    }
+    }
+}
+}
+*/
+html{
+header {
+    background-color: $color-botones-secundario;
+    text-align: justify;
+    
+        background-image: url("../img/coach.jpeg");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 40vh;
+        width: 100%;
+        position: relative;
+        grid-area: header;
+        
+        .container-fluid {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        button{
+            height: 45px; 
+            padding-left: 5px;
+            padding-right: 5px;   
+            margin-bottom: 20px; 
+            margin-top: 10px;   
+            text-transform: uppercase;
+            background-color: #ab4493; 
+            border-color: #ab4493; 
+            border-style: solid; 
+            border-radius: 10px;  
+            width: 420px;   
+            cursor: pointer;
+
+        .toggle-button {
+            position: absolute;
+            top: 1.03rem;
+            right: 1rem;
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+        
+        &:bar {
+            height: 3px;
+            width: 100%;
+            background-color: rgb(137, 24, 202);
+            border-radius: 10px;
+        }
+
+        .contenedor{
+            background-color: $color-fondo;
+            width: 400px;
+            padding:30px;
+            margin:auto;
+            margin-top:100px;
+            border-radius: 4px;
+            font-family:'Roboto',sans-serif;
+            color:white;
+            box-shadow: 7px 13 px 37 px $color-boxshadow;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+
+            ul {
+                margin: 0;
+                padding: 0;
+                display: flex;
+
+
+                li {
+                    display: inline-block;
+                    list-style: none;
+                    text-transform: uppercase;
+                    font-weight: 900;
+                    margin-left: 2rem;
+                    letter-spacing: 1px;
+
+                    a {
+                        @include anclas;
+                        color: $color-fondo;
+                        text-transform: uppercase;
+                        margin-left: 10px;
+
+                        &:hover {
+                            color: rgb(74, 23, 104);
+                            transform: scale(1.5) translateY(-5px);
+                        }
+                        .brand-title {
+                            font-family: var(--ff-sec);
+                            font-size: 4rem;
+                            color: white;
+                        }
+                        
+                        .brand-title a:visited {
+                            color: rgb(107, 35, 175);
+                        }
+                        
+            
+        }
+
+            
+                    }
+                }
+            }
+        }
+    }
+}
+}
